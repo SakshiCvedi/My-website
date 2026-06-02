@@ -118,7 +118,7 @@ function Hero() {
           Passionate about scalable full-stack systems, seller-facing products, and security engineering.
         </p>
         <div className="hero-actions">
-          <a href="mailto:beingchaturvedi27@gmail.com" className="btn btn-primary">Get In Touch</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beingchaturvedi27@gmail.com" target="_blank" rel="noreferrer" className="btn btn-primary">Get In Touch</a>
           <a href="https://github.com/SakshiCvedi" target="_blank" rel="noreferrer" className="btn btn-outline">GitHub ↗</a>
         </div>
         <div className="hero-stats">
@@ -267,8 +267,8 @@ function Contact() {
           </p>
           <div className="social-links">
             <a href="https://github.com/SakshiCvedi" target="_blank" rel="noreferrer" className="social-btn">GitHub</a>
-            <a href="www.linkedin.com/in/sakshi-chaturvedi-29476b210" target="_blank" rel="noreferrer" className="social-btn">LinkedIn</a>
-            <a href="mailto:beingchaturvedi27@gmail.com" className="social-btn">Email</a>
+            <a href="https://www.linkedin.com/in/sakshi-chaturvedi-29476b210" target="_blank" rel="noreferrer" className="social-btn">LinkedIn</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beingchaturvedi27@gmail.com" target="_blank" rel="noreferrer" className="social-btn">Email</a>
           </div>
         </div>
         <div className="contact-right">
