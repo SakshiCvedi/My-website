@@ -14,6 +14,16 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    title: "CartGuard — Abandoned Cart Recovery & Inventory Alerts",
+    stack: ["React", "Node.js", "Express", "SQLite", "node-cron", "Nodemailer", "Tailwind CSS"],
+    emoji: "🛒",
+    color: "#e2a63b",
+    description: "Built a full-stack e-commerce ops tool for store owners: detects abandoned carts via a scheduled background job, automatically triggers a two-step recovery email sequence, and tracks sales velocity per product to raise low-stock alerts with suggested reorder quantities.",
+    highlight: "Designed and tested the background job pipeline for race conditions (overlapping cron runs, transient email-service failures) and fixed real concurrency bugs found through direct testing — not just building the happy path.",
+    link: "https://github.com/SakshiCvedi/CartGuard",
+    published_link: "cart-guard-xi.vercel.app"
+  },
+  {
     title: "TaskFlow — Team Task Tracker API",
     stack: ["Node.js", "TypeScript", "Express", "PostgreSQL", "React.js", "Docker", "Redis", "JWT", "REST APIs"],
     emoji: "✔️",
@@ -40,7 +50,7 @@ const PROJECTS = [
     description: "Built a threat model analyzer that parses input from files (.md, .txt) or raw text, with a modular pipeline featuring file type detection, UTF-8 encoding support, and structured dictionary outputs.",
     highlight: "Integrated Anthropic Claude API to automate threat classification — reducing manual security review effort significantly.",
     link: "https://github.com/SakshiCvedi/Threat-model-generator"
-  },
+  }
 ];
 
 function useInView(threshold = 0.15) {
