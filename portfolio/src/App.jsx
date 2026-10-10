@@ -261,9 +261,23 @@ function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
+    try {
+      const response = await fetch("https://formspree.io/f/mljgnjbq", {
+        method: "POST",
+        headers:  {"Content-Type": "application/json"},
+        body: JSON.stringify(form),
+      });
+      if (response.ok) {
+        setSent(true);
+        setForm({name: "", email: "", message: ""});
+      }else{
+        alert("Something went wrong. Please try again later.");
+      }
+      } catch (err){
+        alert("Network Error. Please try again. ");
+      }
   };
 
   return (
